@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
+    /**
+     * Displays the given foul for Team A.
+     */
     public void displayFoulForTeamA(int foul) {
             TextView foulView = (TextView) findViewById(R.id.team_a_fouls);
             foulView.setText(String.valueOf(foul));
@@ -37,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         displayFoulForTeamA(foulTeamA);
     }
 
+    /**
+     * resets the given score and foul for Team A and B.
+     */
     public void reset (View v){
         scoreTeamA=0;
         scoreTeamB=0;
@@ -55,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+    /**
+     * Displays the given foul for Team B.
+     */
     public void displayFoulForTeamB(int foul) {
         TextView foulView = (TextView) findViewById(R.id.team_b_fouls);
         foulView.setText(String.valueOf(foul));
