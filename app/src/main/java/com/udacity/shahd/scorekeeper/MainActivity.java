@@ -6,10 +6,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA=0;
-    int scoreTeamB=0;
-    int foulTeamA=0;
-    int foulTeamB=0;
+    int scoreTeamA = 0;
+    int scoreTeamB = 0;
+    int foulTeamA = 0;
+    int foulTeamB = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,27 +29,28 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given foul for Team A.
      */
     public void displayFoulForTeamA(int foul) {
-            TextView foulView = (TextView) findViewById(R.id.team_a_fouls);
-            foulView.setText(String.valueOf(foul));
-        }
+        TextView foulView = (TextView) findViewById(R.id.team_a_fouls);
+        foulView.setText(String.valueOf(foul));
+    }
 
-    public void addOneScoreTeamA (View v){
-        scoreTeamA=scoreTeamA + 1;
+    public void addOneScoreTeamA(View v) {
+        scoreTeamA = scoreTeamA + 1;
         displayScoreForTeamA(scoreTeamA);
     }
-    public void addOneFoulTeamA (View v){
-        foulTeamA=foulTeamA + 1;
+
+    public void addOneFoulTeamA(View v) {
+        foulTeamA = foulTeamA + 1;
         displayFoulForTeamA(foulTeamA);
     }
 
     /**
      * resets the given score and foul for Team A and B.
      */
-    public void reset (View v){
-        scoreTeamA=0;
-        scoreTeamB=0;
-        foulTeamA=0;
-        foulTeamB=0;
+    public void reset(View v) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        foulTeamA = 0;
+        foulTeamB = 0;
         displayScoreForTeamA(scoreTeamA);
         displayScoreForTeamB(scoreTeamB);
         displayFoulForTeamA(foulTeamA);
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
     /**
      * Displays the given foul for Team B.
      */
@@ -69,12 +72,14 @@ public class MainActivity extends AppCompatActivity {
         TextView foulView = (TextView) findViewById(R.id.team_b_fouls);
         foulView.setText(String.valueOf(foul));
     }
-    public void addOneScoreTeamB (View v){
-        scoreTeamB=scoreTeamB + 1;
+
+    public void addOneScoreTeamB(View v) {
+        scoreTeamB = scoreTeamB + 1;
         displayScoreForTeamB(scoreTeamB);
     }
-    public void addOneFoulTeamB (View v){
-        foulTeamB=foulTeamB + 1;
+
+    public void addOneFoulTeamB(View v) {
+        foulTeamB = foulTeamB + 1;
         displayFoulForTeamB(foulTeamB);
     }
 

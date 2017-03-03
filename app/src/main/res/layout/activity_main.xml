@@ -66,8 +66,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addOneScoreTeamA"
                 android:background="#3C6"
+                android:onClick="addOneScoreTeamA"
                 android:text="+1 point" />
 
             <Button
@@ -76,8 +76,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addOneFoulTeamA"
                 android:background="#F21"
+                android:onClick="addOneFoulTeamA"
                 android:text="+1 Foul" />
 
 
@@ -145,8 +145,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addOneScoreTeamB"
                 android:background="#3C6"
+                android:onClick="addOneScoreTeamB"
                 android:text="+1 point" />
 
             <Button
@@ -155,8 +155,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addOneFoulTeamB"
                 android:background="#F21"
+                android:onClick="addOneFoulTeamB"
                 android:text="+1 foule" />
         </LinearLayout>
     </LinearLayout>
@@ -168,9 +168,9 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginBottom="32dp"
-        android:onClick="reset"
-        android:textColor="@android:color/primary_text_dark_nodisable"
         android:background="@color/colorPrimaryDark"
-        android:text="Reset" />
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="@android:color/primary_text_dark_nodisable" />
 
 </RelativeLayout>
